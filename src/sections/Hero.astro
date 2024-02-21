@@ -1,0 +1,49 @@
+---
+import Section from "../components/Section.astro";
+
+---
+
+<Section>
+        <div class="hero-description">
+         <h1>
+                Front End Developer
+            </h1>
+            <p>
+                Apasionado del desarrollo digital, encuentro la belleza en resolver problemas. Creador de soluciones.
+            </p>
+        </div>
+</Section>
+
+<style>
+    .hero-description{
+        display: flex;
+        align-items: baseline;
+        max-height: fit-content;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    h1{
+        font-size: 5rem;
+        text-wrap: wrap;
+        max-width: 35%;
+        min-width: 350px;
+        margin: 1rem;
+        margin-left: 0px;
+
+    }
+    p{
+        min-width: 230px;
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+        max-width: 40%;
+        margin: 1rem;
+        text-wrap: wrap;
+        color: #030303;
+        align-self: flex-end;
+        text-align: end;
+    }
+
+</style>
+
+

@@ -1,0 +1,57 @@
+---
+import Section from "@/components/Section.astro";
+import Card from "@/components/Card.astro";
+
+const educacion = [
+  {
+    title: "Front End developer",
+    description: "Un Front End Developer se enfoca en la creación de la parte visual y la interacción de un sitio web o aplicación. Utiliza tecnologías como HTML, CSS y JavaScript, así como frameworks y bibliotecas como React, Angular o Vue.js.",
+    place: "Coderhouse"
+  },
+  {
+    title: "Back End developer",
+    description: "Un Back End Developer se enfoca en la creación y el mantenimiento de la lógica y la funcionalidad de un sitio web o aplicación que no es visible para el usuario final. Utiliza tecnologías como Node.js, Python, Ruby, Java o PHP, junto con frameworks como Express, Django o Spring.",
+    place: "Coderhouse"
+  },
+  {
+    title: "QA Tester",
+    description: "Un QA Tester se encarga de asegurar la calidad de un software mediante la identificación y resolución de errores y problemas. Utiliza técnicas de pruebas manuales y automáticas, así como herramientas específicas para pruebas de software.",
+    place: "Coderhouse"
+  },
+  {
+    title: "React Native",
+    description: "React Native es un framework de desarrollo de aplicaciones móviles que permite crear aplicaciones nativas para iOS y Android utilizando JavaScript y React. Permite a los desarrolladores compartir una base de código entre plataformas y desarrollar aplicaciones de alto rendimiento.",
+    place: "Coderhouse"
+  }
+];
+---
+
+<Section>
+    <div id='education' class="container">
+        <h1>Educación</h1>
+        <section>
+            {
+                educacion.map((item, index) => (
+                    <Card title={item.title} description={item.description} place={item.place} key={index} />
+                    ))
+                }
+        </section>
+    </div>
+</Section>
+
+<style>
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+</style>

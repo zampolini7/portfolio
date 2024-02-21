@@ -1,0 +1,74 @@
+{
+  "name": "John Doe",
+  "title": "Software Developer",
+  "contact": {
+    "email": "johndoe@example.com",
+    "phone": "123-456-7890",
+    "address": "123 Main St, City, State, ZIP"
+  },
+  "summary": "Experienced software developer with a passion for creating efficient and scalable solutions.",
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "university": "University of XYZ",
+      "year": 2015
+    },
+    {
+      "degree": "High School Diploma",
+      "school": "ABC High School",
+      "year": 2011
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "XYZ Corporation",
+      "location": "City, State",
+      "startDate": "2015-01-01",
+      "endDate": "2020-12-31",
+      "responsibilities": [
+        "Developed and maintained web applications using JavaScript, HTML, and CSS.",
+        "Collaborated with cross-functional teams to deliver high-quality software solutions.",
+        "Implemented new features and enhancements based on customer requirements."
+      ]
+    },
+    {
+      "title": "Intern",
+      "company": "ABC Company",
+      "location": "City, State",
+      "startDate": "2014-06-01",
+      "endDate": "2014-08-31",
+      "responsibilities": [
+        "Assisted in testing and debugging software applications.",
+        "Participated in team meetings and provided input on project requirements.",
+        "Learned and applied best practices in software development."
+      ]
+    }
+  ],
+  "skills": [
+    "JavaScript",
+    "Python",
+    "HTML",
+    "CSS",
+    "React",
+    "Node.js",
+    "SQL",
+    "Git"
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    "Open-source projects",
+    "Machine learning",
+    "Traveling",
+    "Photography"
+  ]
+}

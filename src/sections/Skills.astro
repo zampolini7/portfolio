@@ -1,0 +1,104 @@
+---
+import Section from "../components/Section.astro";
+const tecnologias = [
+  "React",
+  "Typescript",
+  "React Native",
+  "Expo", "Javascript",
+  "Styled-Components",
+  "Redux",
+  "Tailwind",
+  "Next",
+  "Jest",
+  "Jira",
+  "Trello",
+  "Confluence",
+  "Figma"
+];
+
+const habilidades = [
+  "Liderazgo Positivo",
+  "Comunicación Asertiva",
+  "Pensamiento estratégico",
+  "Empatía y habilidades interpersonales",
+  "Resolución de conflictos",
+  "Adaptabilidad y flexibilidad",
+  "Gestión del tiempo y organización"
+];
+---
+
+<Section>
+    <div id='skills' class="container">
+            <div class='tyl'>
+                <h1>Tecnologias y lenguajes</h1>
+                <ul class="ul-skill">
+                    {tecnologias.map((tecnologia) => (
+                        <li class='skill'>{tecnologia}</li>
+                        ))}
+            </ul>
+        </div>
+        <div class='habilities'>
+            <h1>Habilidades</h1>
+            <ul class="ul-hab" >
+                {habilidades.map((habilidad, index) => (
+                    <li class='hability'>
+                        {habilidad} 
+                        </li>
+                        <p>
+                            |
+                            </p>
+                            ))}
+            </ul>
+        </div>
+    </div>
+</Section>
+
+<style>
+    .container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .tyl{
+        width: 35%;
+        min-width: 300px;
+        margin: 2rem;
+    }
+    .ul-hab{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem; 
+        padding: 0;
+        align-items: center;
+    }
+    .habilities{
+        width: 50%;
+        min-width: 300px;
+        margin: 2rem;
+    }
+    .ul-skill{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; 
+        padding: 0;
+    }
+    .skill{
+        list-style: none;
+        border: 1px solid grey;
+        padding: 0.5rem 0.5rem;
+        width: fit-content;
+        border-radius: 5px;
+    }
+    .hability{
+        padding: 0.5rem 0.5rem;
+        width: fit-content;
+    }
+    p{
+        
+        margin: 0;
+        padding: 0;
+    }
+
+</style>

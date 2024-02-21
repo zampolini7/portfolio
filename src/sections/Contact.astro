@@ -1,0 +1,98 @@
+---
+import Section  from '../components/Section.astro' 
+import Github  from '@/icons/Github.astro'
+import Lkd  from '@/icons/Lkd.astro'
+import Instagram  from '@/icons/Instagram.astro'
+
+---
+
+<Section >
+    <div class="middle-cont">
+        <form id="contact" action="https://formsubmit.co/cb09c503c8d7828a22a9f557e7148ff2" method="POST" >
+            <input type="text" name="name" id="name" placeholder="Ingresa tu nombre">
+            <input type="email" name="email" id="email" placeholder="Ingresa tu email">
+            <textarea name="name" id="message" placeholder="Ingresa tu mensaje"></textarea>
+            <button class="btn-form">Enviar</button>
+        </form>
+        <div class="contact-me">
+            <div class="me">
+                <h3>Nicolás Zampolini</h3>
+                <h1>zampolini7@gmail.com</h1>
+            </div>
+            <div class="contact">
+                <p>Conecta conmigo</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/nicolas-zampolini-7a7b3b1b3/" target="_blank">
+                        <Github />
+                    </a>
+                    <a href="https://www.instagram.com/nicozampolini/" target="_blank">
+                        <Instagram />
+                    </a>
+                    <a href="https://www.linkedin.com/in/nicolas-zampolini/" target="_blank">
+                        <Lkd />
+                    </a>
+            </div>
+            
+        </div>
+    </div>
+</Section>
+
+
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-width: 350px;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    input, textarea{
+        padding: 1rem;
+        border: 1px solid #F1F1F3;
+        border-radius: 5px;
+        min-width: 300px;
+    }
+    .middle-cont{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        max-height: fit-content;
+        flex-wrap: wrap;
+    }
+    .btn-form{
+        padding: 1rem;
+        border: 1px solid #F1F1F3;
+        background-color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 259px;
+        min-width: 350px;
+        margin: 2rem 0;
+        align-items: flex-start;
+    }
+    .social{
+        display: flex;
+        gap: 2rem;
+    }
+    .me{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    a{
+        max-height: 20px;
+        max-width: 20px;
+    }
+</style>
